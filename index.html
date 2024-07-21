@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <script src="script.js"></script>
+    <style>
+        button:focus {
+            outline: none;
+        }
+        </style>
+   </head>
+   <body style="background-color:black;p">
+       <div style="display:flex;justify-content:center;">
+      <canvas id="canvas" width="324" height="324" style="display: block; margin: 10px auto; border: 3px solid white; border-radius: 5px;margin:0px;"></canvas>
+      </div>
+      
+      <p id="score" style="color:white;margin:6px;text-align:left;"></p>
+      
+     <div style="display:flex;justify-content: center;">
+         <button onclick="moveUp()" style="width:80px;height:50px;font-weight:bold;font-size:20px;margin-bottom:5px;color:white;background-color:#333;border-radius:5px">Up</button>
+         </div>
+         <div style="display:flex;justify-content: center;">
+             <button onclick="moveLeft()" style="width:80px;height:50px;font-weight:bold;font-size:20px;margin-bottom:5px;color:white;background-color:#333;border-radius:5px;margin-right:2.5px">Left</button>
+             <button onclick="toggleGrid()" style="width:80px;height:50px;font-weight:bold;font-size:15px;margin-bottom:5px;color:white;background-color:#333;border-radius:5px;margin-right:2.5px;margin-left:2.5px">Toggle Grid</button>
+             <button onclick="moveRight()" style="width:80px;height:50px;font-weight:bold;font-size:20px;margin-bottom:5px;color:white;background-color:#333;border-radius:5px;margin-left:2.5px;">Right</button>
+             </div>
+             <div style="display:flex;justify-content: center;">
+                 <button onclick="moveDown()" style="width:80px;height:50px;font-weight:bold;font-size:20px;margin-bottom:5px;color:white;background-color:#333;border-radius:5px">Down</button>
+                 </div>
+   </body>
+</html>
